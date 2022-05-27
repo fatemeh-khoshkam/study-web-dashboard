@@ -1,0 +1,72 @@
+.btn, .datepicker-footer .button{
+    font-size: clamp(0.8rem, 5vw, 1.5rem);
+    font-family: inherit;
+    padding: 1rem 2.5rem;
+    outline: 0;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+    border: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.btn-primary{
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-light);
+}
+.btn_secondary{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: var(--clr-base-light);
+    -webkit-box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+}
+.btn_secondary i{
+    font-size: 2rem;
+}
+
+
+/* inputs */
+.form-input {
+    width: 100%;
+    padding: 1.4rem 3.7rem;
+    outline: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    color: var(--clr-base-light);
+    -webkit-box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    -webkit-transition: var(--tran-03);
+    -moz-transition: var(--tran-03);
+    -o-transition: var(--tran-03);
+    -ms-transition: var(--tran-03);
+    transition: var(--tran-03);
+}
+.form-group i {
+    position: absolute;
+    left: 1rem;
+    top: calc(50% - 0.49em);
+    color: var(--clr-base-light);
+}
+.form-group {
+    position: relative;
+}

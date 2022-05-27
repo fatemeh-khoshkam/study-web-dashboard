@@ -1,0 +1,56 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.5rem;
+/*   background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #f2f8f2 75%); */
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select,
+input[type="text"]::placeholder {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+::selection{
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-light);
+}
+.container {
+    height: 100%;
+}

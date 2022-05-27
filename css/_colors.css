@@ -1,0 +1,20 @@
+:root{
+    --clr-base: #666;
+    --clr-base-dark: #424040;
+    --clr-base-light: #989898;
+    --clr-white: #fbfbfb;
+    /* primary brand color */
+    --clr-primary: #8a70d6;
+    --clr-primary-light: #e9e3fe;
+    /* box courses color */
+    --clr-orange: #fcab5e;
+    --clr-orange-light: #fff0e1;
+    --clr-blue: #579be4;
+    --clr-blue-light: #E5F3FE;
+
+    /* transition */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
