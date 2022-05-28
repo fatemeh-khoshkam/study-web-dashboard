@@ -70,7 +70,6 @@
     function today() {
         return new Date().setHours(0, 0, 0, 0);
     }
-    console.log(today());
     // Get the time value of the start of given date or year, month and day
     function dateValue(...args) {
         switch (args.length) {
