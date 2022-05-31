@@ -77,6 +77,11 @@ window.addEventListener('load', () => {
     animateContent();
     animateAside();
 });
+window.addEventListener('scroll', () => {
+    animateNav();
+    animateContent();
+    animateAside();
+});
 
 const today = new Date().setHours(0, 0, 0, 0);
 const defaultOptions = {
