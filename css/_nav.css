@@ -1,8 +1,9 @@
 .sidebar{
+    min-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    width: 30rem;
+    width: 25rem;
     padding: 3rem 1.5rem 0;
     z-index: 100;
     -webkit-transition: var(--tran-05);
@@ -78,9 +79,11 @@ header{
     -o-transition: var(--tran-03);
     -ms-transition: var(--tran-03);
     transition: var(--tran-03);
+    display: inline-block;
 }
 .sidebar.close .textNav{
     opacity: 0;
+    display: none !important;
 }
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
@@ -94,12 +97,15 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 10rem;
+    height: calc(100vh - 10rem);
+    overflow: auto;
+    cursor: pointer;
 }
 .sidebar__menuList{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .sidebar__menuLink{
     height: 4rem;
@@ -117,7 +123,6 @@ header{
 .sidebar__menuLink:hover,.sidebar__menuLink--active{
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: inset 20rem 0 0 0 var(--clr-primary-light);
     background: var(--clr-primary-light);
 }
 .sidebar__menuLink:hover a, .sidebar__menuLink--active a{
@@ -143,27 +148,30 @@ header{
 .sidebar__menuBottom{
     background-color: var(--clr-primary-light);
     border-radius: 1rem;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    padding: 1.5rem;
     justify-content: flex-end;
     padding-bottom: 1rem;
     position: relative;
-    top: 7rem;
-    height: 28vh;
 }
 .sidebar__menuBottom p{
     white-space: break-spaces;
     text-align: center;
     font-size: clamp(0.8rem, 5vw, 1.3rem);
+    margin-bottom: 2rem;
+    color: var(--clr-base);
 }
 .sidebar__menuBottom h3{
-    white-space: break-spaces;
     text-align: center;
     font-size: clamp(1.2rem, 5vw, 1.8rem);
+    margin-bottom: 1rem;
+    margin-top: 9rem;
+    color: var(--clr-base-dark);
 }
 .sidebar__menuBottom img{
     position: absolute;
-    top: -13rem;
+    top: -10rem;
+    height: 20rem;
 }

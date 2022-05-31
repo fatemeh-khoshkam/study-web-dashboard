@@ -19,10 +19,20 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: var(--tran-03);
+    -moz-transition: var(--tran-03);
+    -o-transition: var(--tran-03);
+    -ms-transition: var(--tran-03);
+    transition: var(--tran-03);
 }
 .btn-primary{
     background-color: var(--clr-primary);
     color: var(--clr-primary-light);
+}
+.btn-primary:hover{
+    background-color: #d6caff;
+    color: var(--clr-primary);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 29%);
 }
 .btn_secondary{
     width: 5rem;
@@ -34,11 +44,21 @@
     color: var(--clr-base-light);
     -webkit-box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    -webkit-transition: var(--tran-03);
+    -moz-transition: var(--tran-03);
+    -o-transition: var(--tran-03);
+    -ms-transition: var(--tran-03);
+    transition: var(--tran-03);
 }
 .btn_secondary i{
     font-size: 2rem;
 }
-
+.btn_secondary:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-primary-light);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 40%);
+    cursor: pointer;
+}
 
 /* inputs */
 .form-input {

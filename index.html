@@ -24,6 +24,12 @@
         />
     </head>
     <body>
+        <div id="preloader">
+            <div id="loader">
+                    <i class="fa-solid fa-square-full"></i>
+                    <i class="fa-solid fa-square-full"></i>
+            </div>
+        </div>
         <div class="container">
             <nav class="sidebar animate__animated">
                 <header>
@@ -83,7 +89,7 @@
                         </ul>
                     </div>
                     <div class="sidebar__menuBottom textNav">
-                        <img src="images/1- navbar/navbar-bg-1.png" alt="" />
+                        <img src="images/1- navbar/navbar-bg-3.png" alt="" />
                         <h3>Premium subscription</h3>
                         <p>Buy premium and get access to new courses</p>
                         <button class="btn btn-primary">More detailed</button>
@@ -91,8 +97,8 @@
                 </div>
             </nav>
             <main>
-                <div class="content__main animate__animated">
-                    <header class="content__title">
+                <div class="content__main">
+                    <header class="content__title animate__animated">
                         <h2>Dashboard</h2>
                         <div class="content__action">
                             <div class="content__search form-group">
@@ -109,7 +115,7 @@
                         </div>
                     </header>
                     <section class="courses">
-                        <h3 class="title">New Courses</h2>
+                        <h3 class="title animate__animated">New Courses</h2>
                         <div class="courses__list">
                             <div class="courses__item animate__animated">
                                 <img
@@ -218,7 +224,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="mycourses">
+                    <section class="mycourses animate__animated">
                         <div class="mycourses__title">
                             <h3 class="title">my courses</h2>
                             <a href="#" class="mycourses__link">view all</a>
@@ -316,17 +322,17 @@
                     <div class="content__profile">
                         <div class="content__profileHeader">
                             <h3 class="title">profile</h3>
-                            <div class="btn_secondary">
+                            <div class="btn_secondary btn_edit">
                                 <i class="fa-solid fa-pen-to-square"></i>
                             </div>
                         </div>
                         <div class="content__profileBody">
                             <img src="images/3- avatars/4. Western Man.png" alt="">
-                            <h4>
+                            <h4 class="profile_name">
                                 esther howard
                                 <i class="fa-solid fa-check"></i>
                             </h4>
-                            <span>Elementary</span>
+                            <span class="profile_state">Elementary</span>
                         </div>
                     </div>
                     <div class="date-picker" id="date_picker"></div>

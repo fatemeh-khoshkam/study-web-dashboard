@@ -1,5 +1,5 @@
 main{
-    padding: 3rem 1.5rem 5rem 33rem;
+    padding: 3rem 1.5rem 5rem 26rem;
     width: calc(100% - 5rem);
     -webkit-transition: var(--tran-05);
     -moz-transition: var(--tran-05);
@@ -38,7 +38,7 @@ h3.title{
     align-items: center;
 }
 .sidebar.close ~ main{
-    padding: 3rem 1.5rem 0 12rem;
+    padding: 3rem 1.5rem 5rem 10rem;
     width: calc(100% - 2rem);
 }
 .courses{
@@ -104,6 +104,13 @@ h3.title{
 .courses__footerAvatar{
     display: flex;
 }
+.courses__footerAvatar .courses__footerLink{
+    -webkit-transition: var(--tran-02);
+    -moz-transition: var(--tran-02);
+    -o-transition: var(--tran-02);
+    -ms-transition: var(--tran-02);
+    transition: var(--tran-02);
+}
 .courses__footerAvatar .courses__footerLink:nth-child(1){
     z-index: 1;
 }
@@ -119,6 +126,9 @@ h3.title{
     box-shadow: 0 0 1rem 0 rgb(40 38 41 / 43%);
     border-radius: 50%;
     height: 4rem;
+}
+.courses__footerAvatar img:hover{
+    animation: moveAvatar 1s ease-in-out;
 }
 .avatar--clr1{
     background-color: #C3D1FF;
@@ -180,11 +190,11 @@ h3.title{
     font-size: 1.4rem;
     color: var(--clr-base-dark);
     font-weight: bold;
-    -webkit-transition: var(--tran-05);
-    -moz-transition: var(--tran-05);
-    -o-transition: var(--tran-05);
-    -ms-transition: var(--tran-05);
-    transition: var(--tran-05);
+    -webkit-transition: var(--tran-02);
+    -moz-transition: var(--tran-02);
+    -o-transition: var(--tran-02);
+    -ms-transition: var(--tran-02);
+    transition: var(--tran-02);
 }
 .table tbody tr td:first-child{
     display: flex;
@@ -200,7 +210,6 @@ h3.title{
     padding: 1.5rem;
     border-radius: 1rem;
     font-size: 2rem;
-    transition: var();
     -webkit-transition: var(--tran-05);
     -moz-transition: var(--tran-05);
     -o-transition: var(--tran-05);
@@ -236,6 +245,31 @@ h3.title{
 .mycourses__logo--orange i{
     color: var(--clr-orange);
 }
+.mycourses tr.tr--active{
+    -webkit-transition: var(--tran-02);
+    -moz-transition: var(--tran-02);
+    -o-transition: var(--tran-02);
+    -ms-transition: var(--tran-02);
+    transition: var(--tran-02); 
+    box-shadow: 0 0 1rem 0 #e5b6e5;
+    background-color: var(--clr-primary-light);
+    color: var(--clr-primary);
+    cursor: pointer;
+}
+.table tbody tr.tr--active td{
+    transition: none;
+}
+.mycourses tr.tr--active:hover td:first-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.mycourses tr.tr--active:hover td:last-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+} 
+.mycourses tr.tr--active .mycourses__logo {
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 10%);
+}
 .mycourses tr:hover td{
     background-color: var(--clr-primary-light);
     color: var(--clr-primary);
@@ -248,7 +282,17 @@ h3.title{
 .mycourses tr:hover td:last-child{
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-}
+} 
 .mycourses tr:hover td .mycourses__logo{
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 11%);
+}
+
+@keyframes moveAvatar {
+    35%, 65% {
+        transform: rotateZ(-7deg) translateY(-0.3rem);
+    }
+    
+    25%, 50%, 75% {
+        transform: rotateZ(7deg) translateY(-0.3rem);
+    }
 }
